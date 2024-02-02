@@ -33,9 +33,9 @@ def create_app():
 async def index():
     return await bp.send_static_file("index.html")
 
-@bp.route("/favicon.ico")
+@bp.route("/delaware-logo.jpg")
 async def favicon():
-    return await bp.send_static_file("favicon.ico")
+    return await bp.send_static_file("delaware-logo.jpg")
 
 @bp.route("/assets/<path:path>")
 async def assets(path):
